@@ -16,7 +16,7 @@ const NewTask = (props) => {
         taskChange("");
         const response = await axios ({
             method : "POST",
-            url : "http://127.0.0.1:8000/api/create-task",
+            url : "https://todoapp-assignment-atk.herokuapp.com/api/create-task",
             data : {
                 title : task,
                 Date : new Date ()
